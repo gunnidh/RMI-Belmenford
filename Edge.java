@@ -1,6 +1,4 @@
-import java.io.Serializable;
-
-public class Edge implements Serializable {
+public class Edge implements java.io.Serializable {
     private int source;
     private int destination;
     private int weight;
