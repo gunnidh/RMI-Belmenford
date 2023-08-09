@@ -16,13 +16,22 @@ public class Main {
 
             // Run the algorithms on the node
             node.runSynchronousBellmanFord();
+            System.out.println("\n\n\n");
+            System.out.println("<---------------------------------------------->");
+            System.out.println("\n\n\n");
             node.runAsynchronousBellmanFord();
 
             // Retrieve and display the results
             int[] syncDistances = node.getSynchronousDistances();
             int[] asyncDistances = node.getAsynchronousDistances();
 
+            System.out.println("\n\n\n");
+            System.out.println("<---------------------------------------------->");
+            System.out.println("\n\n\n");
             System.out.println("Synchronous Shortest Paths: " + java.util.Arrays.toString(syncDistances));
+            System.out.println("\n\n\n");
+            System.out.println("<---------------------------------------------->");
+            System.out.println("\n\n\n");
             System.out.println("Asynchronous Shortest Paths: " + java.util.Arrays.toString(asyncDistances));
         } catch (Exception e) {
             e.printStackTrace();
