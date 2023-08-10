@@ -66,21 +66,4 @@ public class Node extends UnicastRemoteObject implements NodeInterface {
     public void sendMessage(int destination, int value) throws RemoteException {
         distances[destination] = value;
     }
-
-    // public static void main(String[] args) {
-    // try {
-    // // Start the RMI registry
-    // LocateRegistry.createRegistry(1099);
-
-    // NodeInterface node = new Node();
-    // String registryURL = "rmi://localhost/Node"; // Change to your IP or hostname
-    // if needed
-
-    // Naming.rebind(registryURL, node);
-
-    // System.out.println("Node is registered.");
-    // } catch (Exception e) {
-    // e.printStackTrace();
-    // }
-    // }
 }
